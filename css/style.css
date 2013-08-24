@@ -551,6 +551,12 @@ a.action:hover {
 	right:30px;
 }
 
+.box-event .about a.tips {
+	padding-left:30px;
+	background:url(../images/icon-tips.png) no-repeat left;
+	font-family:OpenSansBold, Arial, Helvetica, sans-serif;
+}
+
 .box-why {
 	width:980px;
 	/*height:850px;*/
@@ -570,9 +576,25 @@ a.action:hover {
 	margin-top:50px;
 }
 
+.box-why .quote {
+	clear: both;
+}
+
+.box-why .quote img {
+	height:136px;
+	float:left;
+	clear:none;
+}
+
+.box-why .quote blockquote {
+	width:740px;
+	float:left;
+	clear:none;
+}
+
 .box-why ul.statistics {
 	display:block;
-	height:130px;
+	height:140px;
 	margin:0 0 40px;
 }
 
