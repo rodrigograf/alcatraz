@@ -40,4 +40,7 @@ $(document).ready(function(){
 	$(".share a").click(function() {
 		mixpanel.track("Share link clicked: " + $(this).attr('id')); 
 	});
+	$(".tips").click(function() {
+		mixpanel.track("Tips link clicked: " + $(this).attr('id')); 
+	});
 });
