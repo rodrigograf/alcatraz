@@ -26,4 +26,18 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop:0}, 'slow');
 		return false;
 	});
+	
+	//Mixpanel
+	$(".menu ul li a").click(function() {
+		mixpanel.track("Menu item clicked: " + $(this).attr('id')); 
+	});
+	$(".action").click(function() {
+		mixpanel.track("Donate button clicked: " + $(this).attr('id')); 
+	});
+	$(".sponsors a").click(function() {
+		mixpanel.track("Sponsor link clicked: " + $(this).attr('id')); 
+	});
+	$(".share a").click(function() {
+		mixpanel.track("Share link clicked: " + $(this).attr('id')); 
+	});
 });
