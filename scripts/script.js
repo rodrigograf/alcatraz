@@ -28,13 +28,20 @@ $(document).ready(function(){
 	});
 	
 	//Mixpanel and Google Analytics
+	$(".header a").click(function() {
+		mixpanel.track("Header item clicked: " + $(this).attr("id"));
+		_gaq.push(["_trackEvent", "Header", "click", $(this).attr("id")]);
+	});
 	$(".menu ul li a").click(function() {
 		mixpanel.track("Menu item clicked: " + $(this).attr("id"));
 		_gaq.push(["_trackEvent", "Menu", "click", $(this).attr("id")]);
 	});
 	$("a.action").click(function() {
+		//e.preventDefault();
+		//var destination = $(this).attr('href');
+		//setTimeout(function() { window.location.href = destination; }, 1000);
 		mixpanel.track("Donate button clicked: " + $(this).attr("id"));
-		_gaq.push(["_trackEvent", "Button", "click", $(this).attr("id")]);
+		_gaq.push(["_trackEvent", "Button", "click", $(this).attr("id")]);		
 	});
 	$(".sponsors a").click(function() {
 		mixpanel.track("Sponsor link clicked: " + $(this).attr("id"));
