@@ -142,8 +142,10 @@ body {
 	color:#444;
 	font-size:16px;
 	line-height:24px;
-	webkit-animation-name: fade-in;
+	-webkit-animation-name: fade-in;
 	-webkit-animation-duration: .75s;
+	-moz-animation-name: fade-in;
+	-moz-animation-duration: 1.5s;
 }
 
 html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,fieldset,font,img,dl,dt,dd,ol,ul,li,form,label,input,textarea,legend,table,tbody,tr,th,td { 
@@ -484,6 +486,7 @@ a.register:hover {
 
 .box-top a.action, .box-top a.register {
 	display:inline-block;
+	width:152px;
 	margin:0 4px;
 }
 
