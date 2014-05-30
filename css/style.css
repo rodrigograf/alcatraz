@@ -919,3 +919,8 @@ body.frame {
 	display:inline;
 	margin:0;
 }
+
+.fancybox-inner {
+	-webkit-overflow-scrolling: touch !important;
+	overflow: scroll !important;
+}
