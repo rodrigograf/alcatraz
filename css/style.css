@@ -883,6 +883,7 @@ a.modal-zoom {
 
 body.frame {
 	background:#fff;
+	-webkit-overflow-scrolling:touch;
 }
 
 .modal.modal-frame {
@@ -892,6 +893,7 @@ body.frame {
 	padding:20px;
 	margin-bottom:0;
 	overflow:none;
+	-webkit-overflow-scrolling:touch;
 }
 
 .modal .tmms-logo {
