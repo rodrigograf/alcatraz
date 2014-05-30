@@ -878,6 +878,20 @@ a.modal-zoom {
 	padding:20px;
 	margin-bottom:40px;
 	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+body.frame {
+	background:#fff;
+}
+
+.modal.modal-frame {
+	width:auto;
+	min-height:0;
+	max-height:100%;
+	padding:20px;
+	margin-bottom:0;
+	overflow:none;
 }
 
 .modal .tmms-logo {
