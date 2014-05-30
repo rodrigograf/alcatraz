@@ -881,9 +881,9 @@ a.modal-zoom {
 	-webkit-overflow-scrolling:touch;
 }
 
-iframe {
+iframe, #fancybox-frame {
 	overflow-y:auto;
-	-webkit-overflow-scrolling:touch;
+	-webkit-overflow-scrolling:touch !important;
 }
 
 body.frame {
